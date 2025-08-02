@@ -1,4 +1,4 @@
-**CS416-NarrativeVisualization**
+# CS416-NarrativeVisualization
 
 The central message of this narrative visualization is that the US housing market is not a monolith; it is a complex collection of distinct markets that vary significantly based on three key factors: property type, geographic location (state), and market status (e.g., For Sale vs. Sold). 
  Deployment URL: https://zohrehmah.github.io/
