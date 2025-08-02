@@ -1,0 +1,173 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.navigation {
+    margin-bottom: 20px;
+}
+#property-type-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.prop-button {
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+    font-size: 14px;
+    background-image: linear-gradient(to bottom, #f7f7f7, #e3e3e3);
+}
+.prop-button:hover {
+    background-image: none;
+    background-color: #d4d4d4;
+}
+.prop-button.active {
+    background-image: none;
+    background-color: #28a745;
+    color: white;
+    border-color: #218838;
+}
+#status-filter-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.status-group label {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+.chart-wrapper {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.scatter-plot-area {
+    display: flex;
+    align-items: flex-start;
+}
+.bar {
+    transition: fill 0.2s;
+}
+.axis-title {
+    font-size: 12px;
+    font-weight: bold;
+    fill: #333;
+}
+
+.legend-container {
+    height: 350px;
+    overflow-y: auto;
+    padding-left: 15px;
+    text-align: right;
+    width: auto; 
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+.legend-item:hover {
+    background-color: #e9e9e9;
+}
+.legend-item span {
+    flex-grow: 1; 
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    border-radius: 3px;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.tooltip h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+#tips-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+    color: #ca843d;
+}
+.tip {
+    animation: flash 2.5s infinite;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #888;
+}
+footer a {
+    color: #0056b3;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

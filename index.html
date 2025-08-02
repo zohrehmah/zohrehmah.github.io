@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Property Markets by State</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>US Property Markets by State</h1>
+        <p class="subtitle">Select a property type and status to see how average prices and sizes compare across the country.</p>
+
+        <div class="navigation">
+            <div id="property-type-buttons"></div>
+            <div id="status-filter-container"></div>
+        </div>
+
+        <h2 id="scene-title"></h2>
+
+        <div id="tips-container">
+            <span class="tip">Hover over the bars and dots for more details.</span>
+            <span class="tip">Hover over the legend on the right to filter by state.</span>
+        </div>
+
+        <div class="charts-container">
+            <div id="chart1-container" class="chart-wrapper">
+                <h3 class="chart-title">Average Price by State</h3>
+                <svg id="bar-chart"></svg>
+            </div>
+            <div id="chart2-container" class="chart-wrapper">
+                <h3 class="chart-title">Price vs. Area (Sqft)</h3>
+                <div class="scatter-plot-area">
+                    <svg id="scatter-plot"></svg>
+                    <div id="scatter-legend" class="legend-container"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Data Source: <a href="https://www.kaggle.com/datasets/abdulwadood11220/usa-house-sales-data" target="_blank">USA House Sales Data on Kaggle</a></p>
+        </footer>
+    </div>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-svg-annotation@2.5.1/d3-annotation.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
